@@ -126,7 +126,7 @@ RUN mkdir /openedx/data
 ENV SERVICE_VARIANT lms
 ENV SETTINGS tutor.production
 
-{{ patch("openedx-dockerfile") }}
+
 
 # Entrypoint will set right environment variables
 ENTRYPOINT ["docker-entrypoint.sh"]
