@@ -101,7 +101,7 @@ COPY ./bin /openedx/bin
 RUN chmod a+x /openedx/bin/*
 ENV PATH /openedx/bin:${PATH}
 
-{{ patch("openedx-dockerfile-pre-assets") }}
+
 
 # Collect production assets. By default, only assets from the default theme
 # will be processed. This makes the docker image lighter and faster to build.
